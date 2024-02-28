@@ -1,0 +1,81 @@
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+
+.button-img {
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+}
+
+.btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@-webkit-keyframes botao-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes botao-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.botao-pulse {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.botao-pulse:hover,
+.botao-pulse:focus,
+.botao-pulse:active {
+
+  -webkit-animation-name: botao-pulse;
+  animation-name: botao-pulse;
+  -webkit-animation-duration: 3s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}

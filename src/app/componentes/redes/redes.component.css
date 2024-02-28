@@ -1,0 +1,123 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+}
+
+.button-rs {
+
+  padding: 0.5em;
+  border-radius: 100vw;
+  display: inline-flex;
+  margin: 0.7em;
+  color: #ffffff;
+  width: auto;
+
+}
+
+.button-rs a {
+
+  text-decoration: none;
+  color: #fff;
+  display: inherit;
+
+}
+
+.instagram {
+
+  background: hsl(0 0% 10%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  font-family: var(--texto);
+}
+
+.contato {
+  background: #3b5998;
+  font-family: var(--texto);
+}
+
+.whatsapp {
+  background: #15cc31;
+  font-family: var(--texto);
+}
+
+.button-rs:hover {
+  cursor: pointer;
+}
+
+.button-rs i {
+
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.9rem;
+  font-size: 1.5em;
+
+
+}
+
+.button-rs span {
+
+  font-size: 1em;
+  padding-left: 0.5em;
+
+}
+
+.button-rs:hover span {
+  width: 6.25rem;
+  margin-left: 1em;
+  margin-bottom: 0.4em;
+}
+
+.button-rs.instagram:hover span {
+  width: 6.25rem;
+  margin-left: 1em;
+  margin-bottom: 0.4em;
+}
+
+@media(max-width:800px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os botões se movam para a próxima linha */
+    justify-content: center;
+  }
+
+  .button-rs {
+    flex-basis: 30%;
+    /* Ajuste conforme necessário para a largura desejada */
+    padding: 0.5em;
+    border-radius: 100vw;
+    display: inline-flex;
+    margin: 0.7em;
+    color: #ffffff;
+    width: auto;
+  }
+
+  .button-rs i {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.9rem;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
+
+  .button-rs span {
+    position: inherit;
+    display: inline-block;
+    white-space: nowrap;
+    width: auto;
+    overflow: hidden;
+    transition: 350ms ease;
+  }
+
+  .button-rs:hover span {
+    width: auto;
+    margin-left: 1em;
+    margin-top: 0.4em;
+  }
+
+  .instagram {
+    background: hsl(0 0% 10%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    font-family: var(--texto);
+  }
+}

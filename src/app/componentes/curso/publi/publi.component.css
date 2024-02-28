@@ -1,0 +1,99 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  background-color: var(--azul);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.publi-esquerda {
+  margin-right: 0.3em;
+  background-image: url('../../../../assets/cursos/curso/Contorno.png');
+  background-repeat: no-repeat;
+  background-size: 30vh auto;
+  background-position-x: left;
+  background-position-y: top;
+
+}
+
+.publi-esquerda,
+.publi-direita {
+  flex: 1;
+  background-color: var(--branco);
+  max-width: 100%;
+}
+
+
+.publi-esquerda p {
+  width: 50%;
+  text-align: center;
+}
+
+.rodape {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 2%;
+  max-width: 100%;
+  background-color: var(--azul);
+}
+
+.rodape p {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.publi-esquerda,
+.publi-direita {
+  display: flex;
+  justify-content: center;
+  text-align: flex-start;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+
+@media all and (max-width: 820px) {
+
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  }
+
+  .publi-esquerda {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .publi-esquerda p {
+    margin-right: 0;
+
+    width: max-content;
+    text-align: center;
+  }
+
+  .rodape {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,138 @@
+<body>
+  <div class="wrapper">
+    <div class="frame">
+      <div class="texto">
+        <img src="{{ caminhoImg }}" alt="" />
+      </div>
+      <div class="button-row">
+        <button
+          class="btn"
+          (click)="abrirGaleria('Militar')"
+          [class.clicked]="botaoInfo['Militar'].clicado"
+        >
+          <img
+            *ngIf="!botaoInfo['Militar'].clicado"
+            [src]="botaoInfo['Militar'].imagemInicial"
+            alt="Imagem Inicial"
+          />
+          <img
+            *ngIf="botaoInfo['Militar'].clicado"
+            [src]="botaoInfo['Militar'].imagemClicada"
+            alt="Imagem Clicada"
+          />
+        </button>
+
+        <button
+          class="btn"
+          (click)="abrirGaleria('Vestibular')"
+          [class.clicked]="botaoInfo['Vestibular'].clicado"
+        >
+          <img
+            *ngIf="!botaoInfo['Vestibular'].clicado"
+            [src]="botaoInfo['Vestibular'].imagemInicial"
+            alt="Imagem Inicial"
+          />
+          <img
+            *ngIf="botaoInfo['Vestibular'].clicado"
+            [src]="botaoInfo['Vestibular'].imagemClicada"
+            alt="Imagem Clicada"
+          />
+        </button>
+
+        <button
+          class="btn efem"
+          (click)="abrirGaleria('Efem')"
+          [class.clicked]="botaoInfo['Efem'].clicado"
+        >
+          <img
+            *ngIf="!botaoInfo['Efem'].clicado"
+            [src]="botaoInfo['Efem'].imagemInicial"
+            alt="Imagem Inicial"
+          />
+          <img
+            *ngIf="botaoInfo['Efem'].clicado"
+            [src]="botaoInfo['Efem'].imagemClicada"
+            alt="Imagem Clicada"
+          />
+        </button>
+
+        <button
+          class="btn"
+          (click)="abrirGaleria('Concursos')"
+          [class.clicked]="botaoInfo['Concursos'].clicado"
+        >
+          <img
+            *ngIf="!botaoInfo['Concursos'].clicado"
+            [src]="botaoInfo['Concursos'].imagemInicial"
+            alt="Imagem Inicial"
+          />
+          <img
+            *ngIf="botaoInfo['Concursos'].clicado"
+            [src]="botaoInfo['Concursos'].imagemClicada"
+            alt="Imagem Clicada"
+          />
+        </button>
+      </div>
+    </div>
+    <div *ngIf="galeriaAberta">
+      <div class="image-gallery">
+        <div class="texto-galeria">
+          <div class="img"><img src="{{ img }}" alt="" /></div>
+          <div class="texto">
+            {{ textoGaleriaAtual }}
+          </div>
+          <div class="img"><img src="{{ img }}" alt="" /></div>
+        </div>
+
+        <div class="imagem">
+          <div class="imagem-wrapper" *ngFor="let curso of cursos">
+            <a [routerLink]="[curso.rotaDestino]">
+              <img
+                [src]="curso.imagem"
+                [ngClass]="{ 'imagem-galeria': true }"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container">
+        <div class="gallery-text">
+          <div class="img-texto">
+            <div
+              class="description-galeria-text"
+              [style.white-space]="'pre-line'"
+              [innerHTML]="descricaoBotaoAtual"
+            ></div>
+            <div class="img"><img src="{{ img }}" alt="" /></div>
+          </div>
+          <div>
+            <div
+              class="description-galeria-text-2"
+              [style.white-space]="'pre-line'"
+              [innerHTML]="descricaoBotaoAtual_2"
+            ></div>
+            <div></div>
+          </div>
+          <div class="background">
+            <div
+              class="description-galeria-text-3"
+              [style.white-space]="'pre-line'"
+              [innerHTML]="descricaoBotaoAtual_3"
+            ></div>
+            <div
+              class="description-galeria-text-4"
+              [style.white-space]="'pre-line'"
+              [innerHTML]="descricaoBotaoAtual_4"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="msg_publi">
+      <app-publi />
+    </div>
+  </div>
+</body>
+<div class="logo">
+  <img class="img" src="{{ logo }}" alt="" />
+</div>

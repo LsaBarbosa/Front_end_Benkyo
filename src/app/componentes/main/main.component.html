@@ -1,0 +1,35 @@
+<body>
+  <div class="wrapper">
+    <main>
+      <div class="regras">
+        <img src="{{ regras }}" alt="" />
+      </div>
+      <div class="bolsao"><img src="{{ img1 }}" alt="" /></div>
+      <div class="container-inscrevase">
+        <div class="inscrevase">
+          <div class="texto">{{ texto }}</div>
+          <div class="texto2">{{ texto2 }}</div>
+        </div>
+      </div>
+      <div class="bolsao-info">
+        <div class="bolsao"><img src="{{ img2 }}" alt="" /></div>
+        <div class="container-redes">
+          <div class="redes">
+            <app-redes></app-redes>
+          </div>
+        </div>
+      </div>
+      <div class="inscreva">
+        <div class="inscreva-button">
+          <app-buttons-cursos
+            class="app-buttons-cursos"
+            (click)="navigateTo(linkUrl)"
+          ></app-buttons-cursos>
+        </div>
+      </div>
+      <div class="footer">
+        <app-footer />
+      </div>
+    </main>
+  </div>
+</body>

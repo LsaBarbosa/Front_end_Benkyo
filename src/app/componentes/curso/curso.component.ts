@@ -206,17 +206,17 @@ export class CursosComponent {
     } else if (categoria === 'Concursos') {
       return [
         {
-          imagem: '../../../assets/cursos/concursos_publicos/concurso_img.jpg',
+          imagem: '../../../assets/cursos/concurso/Carreiras administrativas.png',
           rotaDestino: '/adm',
           descricaoGaleria: 'adm',
         },
         {
-          imagem: '../../../assets/cursos/concursos_publicos/concurso_img.jpg',
+          imagem: '../../../assets/cursos/concurso/Carreiras Jurídicas.png',
           rotaDestino: '/juridica',
           descricaoGaleria: 'juridica',
         },
         {
-          imagem: '../../../assets/cursos/concursos_publicos/concurso_img.jpg',
+          imagem: '../../../assets/cursos/concurso/CNU.png',
           rotaDestino: '/cnu',
           descricaoGaleria: 'cnu',
         },

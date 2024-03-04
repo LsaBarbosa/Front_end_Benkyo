@@ -216,9 +216,9 @@ main {
     margin: 0;
     line-height: 0;
     overflow: hidden;
-    width: 7.5rem;
+    width: 9rem;
     height: auto;
-
+margin-left: 2rem;
   }
 
 

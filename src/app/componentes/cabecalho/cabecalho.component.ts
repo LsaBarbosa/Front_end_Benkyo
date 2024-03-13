@@ -11,13 +11,14 @@ export class CabecalhoComponent implements OnInit {
   imgCursos = '../../../assets/botao/menu/CURSOS.png';
 
   constructor(private router: Router) {}
-
+ 
+  onImageClick(): void {
+    this.router.navigate(['/home']);
+  }
+  
   ngOnInit() {
     this.img;
     this.onImageClick;
     this.imgCursos;
-  }
-  onImageClick(): void {
-    this.router.navigate(['/home']);
   }
 }

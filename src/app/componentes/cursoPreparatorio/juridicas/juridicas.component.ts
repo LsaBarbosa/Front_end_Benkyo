@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./juridicas.component.css'],
 })
 export class JuridicasComponent implements OnInit {
-  titleParallax_1: string = 'Tribunal Superior e Regional Eleitoral'; 
+  titleParallax_1: string = ''; 
   subtitleParallax_1: string = 'TSE / TRE';
   textParallax_1: SafeHtml;
 

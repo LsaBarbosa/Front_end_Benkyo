@@ -1,24 +1,28 @@
 <body>
   <div class="wrapper">
     <main>
-      <div class="regras">
-        <img src="{{ regras }}" alt="" />
-      </div>
-      <div class="bolsao"><img src="{{ img1 }}" alt="" /></div>
-      <div class="container-inscrevase">
-        <div class="inscrevase">
-          <div class="texto">{{ texto }}</div>
-          <div class="texto2">{{ texto2 }}</div>
-        </div>
-      </div>
-      <div class="bolsao-info">
-        <div class="bolsao"><img src="{{ img2 }}" alt="" /></div>
-        <div class="container-redes">
-          <div class="redes">
-            <app-redes></app-redes>
+      <div class="container-info">
+        <div class="info">
+          <div class="texto_linha">
+            <div class="texto1_linha">{{texto1}}</div>
+            <div class="texto2_linha"> {{ texto2}}</div>
+            <div class="texto3_linha">{{ texto3}}</div>
           </div>
+          <div class="texto4_linha">{{ texto4 }}</div>
         </div>
       </div>
+      <div class="aprovados_container">
+        <div class="aprovados">
+          <div class="aprovado"><img src="{{ img1 }}" alt="" /></div>
+          <div class="aprovado"><img src="{{ img2 }}" alt="" /></div>
+          <div class="aprovado"><img src="{{ img3 }}" alt="" /></div>
+        </div>
+        <div class="aprovados_2nd">
+          <div class="aprovado"><img src="{{ img4 }}" alt="" /></div>
+          <div class="aprovado"><img src="{{ img5 }}" alt="" /></div>
+          </div>
+          </div>
+
       <div class="inscreva">
         <div class="inscreva-button">
           <app-buttons-cursos
@@ -26,9 +30,6 @@
             (click)="navigateTo(linkUrl)"
           ></app-buttons-cursos>
         </div>
-      </div>
-      <div class="footer">
-        <app-footer />
       </div>
     </main>
   </div>

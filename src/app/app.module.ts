@@ -17,7 +17,6 @@ import { VestibularComponent } from './componentes/cursoPreparatorio/vestibular/
 import { SobreComponent } from './componentes/sobre/sobre.component';
 import { EfemComponent } from './componentes/cursoPreparatorio/efem/efem';
 import { ButtonsCursosComponent } from './componentes/buttons-cursos/buttons-cursos.component';
-import { ConcursosComponent } from './componentes/cursoPreparatorio/concursos/concursos.component';
 import { PmComponent } from './componentes/cursoPreparatorio/pm/pm.component';
 import { BombeiroComponent } from './componentes/cursoPreparatorio/bombeiro/bombeiro.component';
 import { JuridicasComponent } from './componentes/cursoPreparatorio/juridicas/juridicas.component';
@@ -45,7 +44,6 @@ import { CnuComponent } from './componentes/cursoPreparatorio/cnu/cnu.component'
     SobreComponent,
     EfemComponent,
     ButtonsCursosComponent,
-    ConcursosComponent,
     PmComponent,
     BombeiroComponent,
     JuridicasComponent,

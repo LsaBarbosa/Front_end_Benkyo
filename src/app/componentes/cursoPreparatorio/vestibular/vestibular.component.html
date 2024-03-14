@@ -11,7 +11,12 @@
           <p [style.white-space]="'pre-line'" [innerHTML]="textParallax_1"></p>
         </div>
         <div class="inscreva">
-          <div class="inscreva-button"></div>
+          <div class="inscreva-button">
+            <app-buttons-cursos
+              class="app-buttons-cursos"
+              (click)="navigateTo(linkUrl)"
+            ></app-buttons-cursos>
+          </div>
         </div>
       </section>
     </main>

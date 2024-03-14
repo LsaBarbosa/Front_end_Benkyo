@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buttons-cursos.component.css'],
 })
 export class ButtonsCursosComponent implements OnInit {
-  img: string = '../../../assets/botao/inscreva/matricule-se.png';
+  img: string = '../../../assets/botao/inscreva/MATRICULE-SE 2.png';
   ngOnInit(): void {
     this.img;
   }

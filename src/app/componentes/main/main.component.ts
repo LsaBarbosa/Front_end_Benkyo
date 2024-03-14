@@ -19,12 +19,22 @@ export class MainComponent implements OnInit {
   img4 = `../../../assets/Home/CONCURSOS.png`;
   img5 = `../../../assets/Home/ENSINO MÉDIO.png`;
 
-  linkUrl: string =
-    'https://docs.google.com/forms/d/1MADURrn6DuXn4ETXExXhRqFMofw41fXtttuBS-vtGn0/edit';
+  linkUrl: string ='/contato';
+
+  vestibular: string ='/vestibular';
+  militar: string ='/concursos';
+  medicina: string ='/med';
+  concurso: string ='/concursos';
+  ensino_medio: string ='/efem';
   constructor(private router: Router) {}
 
   navigateTo(url: string) {
     window.open(url, this.linkUrl);
+    window.open(url, this.vestibular);
+    window.open(url, this.militar);
+    window.open(url, this.concurso);
+    window.open(url, this.medicina);
+    window.open(url, this.ensino_medio);
   }
 
   ngOnInit(): void {
@@ -38,5 +48,6 @@ export class MainComponent implements OnInit {
     this.texto3;
     this.texto4;
     this.regras;
+    this.navigateTo;
   }
 }

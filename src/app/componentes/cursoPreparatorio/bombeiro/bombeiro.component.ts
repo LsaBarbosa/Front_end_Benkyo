@@ -13,15 +13,14 @@ export class BombeiroComponent implements OnInit {
 
   textParallax_1: SafeHtml;
 
-  linkUrl: string = 'https://app.zapsign.com.br/verificar/doc/dd3856c8-fc36-4c4e-9cfb-86025149fb66';
+  linkUrl: string = '/contato';
 
   constructor(private router: Router, private sanitizer: DomSanitizer) {
     this.textParallax_1 = this.sanitizer.bypassSecurityTrustHtml(this.bombeiro_militar);
   }
   navigateTo(url: string) {
-    window.open(url,this.linkUrl);
+    this.router.navigate([url]);
   }
-
   ngOnInit(): void {
     this.textParallax_1;
   }

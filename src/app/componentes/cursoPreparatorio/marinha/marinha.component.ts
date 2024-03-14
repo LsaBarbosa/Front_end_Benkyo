@@ -23,8 +23,8 @@ export class MarinhaComponent implements OnInit {
   textParallax_2: SafeHtml;
   textParallax_3: SafeHtml;
   textParallax_4: SafeHtml;
-
-  linkUrl: string = '/cursos';
+  
+  linkUrl: string = '/contato';
 
   constructor(private router: Router, private sanitizer: DomSanitizer) {
     this.textParallax_1 = this.sanitizer.bypassSecurityTrustHtml(this.cn);

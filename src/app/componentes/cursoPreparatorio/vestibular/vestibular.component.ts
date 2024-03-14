@@ -11,7 +11,7 @@ export class VestibularComponent implements OnInit {
   titleParallax_1: string = ``;
   subtitleParallax_1: string = 'ENEM e UERJ';
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = 'https://app.zapsign.com.br/verificar/doc/dd3856c8-fc36-4c4e-9cfb-86025149fb66';
 
   textParallax_1: SafeHtml;
 
@@ -20,8 +20,9 @@ export class VestibularComponent implements OnInit {
   }
 
   navigateTo(url: string) {
-    this.router.navigate([url]);
+    window.open(url,this.linkUrl);
   }
+
   ngOnInit(): void {
     this.subtitleParallax_1;
     this.textParallax_1;

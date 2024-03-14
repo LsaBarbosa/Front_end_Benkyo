@@ -20,7 +20,7 @@ export class FabComponent implements OnInit {
   subtitleParallax_3: string = 'Escola Preparatória de Cadetes do Ar - EPCAR';
   textParallax_3: SafeHtml;
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = '/contato';
   
   constructor(private router: Router, private sanitizer: DomSanitizer) {
     this.textParallax_1 = this.sanitizer.bypassSecurityTrustHtml(this.ear);

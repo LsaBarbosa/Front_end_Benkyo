@@ -16,7 +16,7 @@ export class ExercitoComponent implements OnInit {
   textParallax_1: SafeHtml;
   textParallax_2: SafeHtml;
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = '/contato';
   constructor(private router: Router, private sanitizer: DomSanitizer) {
     this.textParallax_1 = this.sanitizer.bypassSecurityTrustHtml(this.esa);
     this.textParallax_2 = this.sanitizer.bypassSecurityTrustHtml(this.especex);

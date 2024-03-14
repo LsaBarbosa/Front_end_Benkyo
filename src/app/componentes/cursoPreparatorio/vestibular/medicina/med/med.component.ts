@@ -11,7 +11,7 @@ export class MedComponent implements OnInit {
   titleParallax_1: string = ``;
   subtitleParallax_1: string = 'Preparatório de Medicina - PRÉ-MED';
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = 'https://app.zapsign.com.br/verificar/doc/eb0e6079-43f5-46d9-8e24-10bab22944d3';
 
   textParallax_1: SafeHtml;
 
@@ -20,7 +20,7 @@ export class MedComponent implements OnInit {
   }
 
   navigateTo(url: string) {
-    this.router.navigate([url]);
+    window.open(url,this.linkUrl);
   }
   ngOnInit(): void {
     this.subtitleParallax_1;

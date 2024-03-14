@@ -14,7 +14,7 @@ export class EfemComponent implements OnInit {
   titleParallax_4: string = ``;
   subtitleParallax_1: string = 'Escolas Federais do Ensino Médio - EFEM';
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = 'https://app.zapsign.com.br/verificar/doc/ca9a5efd-f7ec-4dfa-ad53-efbf81915b08';
 
   textParallax_1: SafeHtml;
 
@@ -23,7 +23,7 @@ export class EfemComponent implements OnInit {
   }
 
   navigateTo(url: string) {
-    this.router.navigate([url]);
+    window.open(url,this.linkUrl);
   }
   ngOnInit(): void {
     this.textParallax_1;

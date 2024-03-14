@@ -29,13 +29,9 @@ export class MainComponent implements OnInit {
   constructor(private router: Router) {}
 
   navigateTo(url: string) {
-    window.open(url, this.linkUrl);
-    window.open(url, this.vestibular);
-    window.open(url, this.militar);
-    window.open(url, this.concurso);
-    window.open(url, this.medicina);
-    window.open(url, this.ensino_medio);
+    this.router.navigateByUrl(url);
   }
+  
 
   ngOnInit(): void {
     this.img1;

@@ -5,8 +5,14 @@ Bem-vindo ao projeto Benkyô Preparatório - um site institucional para divulga�
 ## ⚙️Tecnologias Utilizadas ⚙️
 
 **[Angular]()**
+
+
 **[TypeScript]()**
+
+
 **[HTML]()**
+
+
 **[CSS]()**
 
 ## 🛠 Funcionalidades 🛠

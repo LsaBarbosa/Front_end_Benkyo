@@ -20,7 +20,7 @@ export class CnuComponent implements OnInit {
   textParallax_2: SafeHtml;
   textParallax_3: SafeHtml;
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = '/contato';
   
   constructor(private router: Router, private sanitizer: DomSanitizer) {
     this.textParallax_1 = this.sanitizer.bypassSecurityTrustHtml(this.bloco_1_7);

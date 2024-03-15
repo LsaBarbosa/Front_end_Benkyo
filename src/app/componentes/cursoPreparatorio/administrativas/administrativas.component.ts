@@ -23,7 +23,7 @@ export class AdministrativasComponent implements OnInit {
   textParallax_3: SafeHtml;
   textParallax_4: SafeHtml;
 
-  linkUrl: string = '/cursos';
+  linkUrl: string = '/contato';
 
   constructor(private router: Router, private sanitizer: DomSanitizer) {
     this.textParallax_1 = this.sanitizer.bypassSecurityTrustHtml(this.inss);
